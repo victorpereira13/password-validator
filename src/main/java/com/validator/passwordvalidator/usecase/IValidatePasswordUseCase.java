@@ -1,6 +1,6 @@
 package com.validator.passwordvalidator.usecase;
 
-public interface IPasswordValidator {
+public interface IValidatePasswordUseCase {
 
     boolean validate(String password);
 

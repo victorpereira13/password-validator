@@ -1,14 +1,13 @@
 package com.validator.passwordvalidator.domain.service;
 
 import com.validator.passwordvalidator.domain.Password;
-import com.validator.passwordvalidator.usecase.IPasswordValidator;
-import com.validator.passwordvalidator.usecase.exceptions.PasswordValidatorException;
+import com.validator.passwordvalidator.usecase.IValidatePasswordUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class PasswordValidatorImpl implements IPasswordValidator {
+public class ValidatePasswordUseCaseImpl implements IValidatePasswordUseCase {
     private final ValidationService validationService;
 
     @Override

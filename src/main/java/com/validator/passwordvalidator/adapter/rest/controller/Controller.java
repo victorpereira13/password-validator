@@ -1,7 +1,7 @@
 package com.validator.passwordvalidator.adapter.rest.controller;
 
 
-import com.validator.passwordvalidator.usecase.IPasswordValidator;
+import com.validator.passwordvalidator.usecase.IValidatePasswordUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class Controller {
 
-    private final IPasswordValidator passwordValidator;
+    private final IValidatePasswordUseCase passwordValidator;
 
 
     @PostMapping("/validate")
@@ -22,6 +22,7 @@ public class Controller {
         boolean isOk = passwordValidator.validate(request.getPassword());
         return ResponseEntity.ok(PasswordResponse.builder().valid(isOk).build());
     }
+
 
 
 }
