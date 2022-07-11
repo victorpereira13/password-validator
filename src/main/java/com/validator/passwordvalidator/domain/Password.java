@@ -1,9 +1,8 @@
-package com.validator.passwordvalidator.entity;
+package com.validator.passwordvalidator.domain;
 
 
-import com.validator.passwordvalidator.entity.exceptions.PasswordException;
+import com.validator.passwordvalidator.domain.exceptions.PasswordException;
 import lombok.Builder;
-import lombok.Data;
 import lombok.Getter;
 
 import java.util.Objects;

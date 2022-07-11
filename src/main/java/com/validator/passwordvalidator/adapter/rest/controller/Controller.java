@@ -2,8 +2,6 @@ package com.validator.passwordvalidator.adapter.rest.controller;
 
 
 import com.validator.passwordvalidator.usecase.IPasswordValidator;
-import com.validator.passwordvalidator.usecase.PasswordRequest;
-import com.validator.passwordvalidator.usecase.PasswordResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

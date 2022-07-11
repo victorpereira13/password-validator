@@ -1,4 +1,4 @@
-package com.validator.passwordvalidator.usecase;
+package com.validator.passwordvalidator.adapter.rest.controller;
 
 
 import lombok.*;
