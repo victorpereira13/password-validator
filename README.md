@@ -17,7 +17,7 @@ A aplicação foi feita com SpringBoot para validar uma senha através de crité
 * Optei por utilizar aaClean Architecture visando escrever um código com baixo acoplamento, alta coesão, altamente testável e que
   facilita a automação de testes num futuro hipotético
 
-![CleanArch](C:\Users\victo\Pictures\CleanArch.png)
+![CleanArch](media/CleanArch.png)
 
 ## Funcionamento
 
@@ -26,7 +26,7 @@ A aplicação foi feita com SpringBoot para validar uma senha através de crité
 A camada do adapter convert por converter a chamada externa (POST) para um formato que o programa interprete.
 Para a chamada do usecase, esta é feita através de uma interface presente na camada do usecase
 
-![Interface](C:\Users\victo\Pictures\interface.png)
+![Interface](media/interface.png)
 
 ### Entities
 Onde está presente a entidade `Password`, que ja contém validações básicas e que será acessada pelo usecase. 
@@ -36,7 +36,7 @@ O caso de uso vai chamar a entidade e tranformá-la na variável interna `psw` p
 da senha, e caso a senha seja válida, retornará `true`, caso contrário, retornará uma exception com a mensagem do critério
 inválido.
 
-![Usecase](C:\Users\victo\Pictures\usecase.png)
+![Usecase](media/usecase.png)
 
 ##### Premissas
 
@@ -47,7 +47,7 @@ exclusão de qualquer validação
 ## Testes
 
 Utilizei testes unitários para o caso de uso e integrados para o adapter, com uma cobertura de código de mais de 80% 
-conforme o relatório do JacoCo feito através do comando ![Jacoco](C:\Users\victo\Pictures\jacoco.png)
+conforme o relatório do JacoCo feito através do comando ![Jacoco](media/jacoco.png)
 
 ## Como rodar a aplicação
 
