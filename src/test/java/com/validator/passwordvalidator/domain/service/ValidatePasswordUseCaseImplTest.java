@@ -19,9 +19,6 @@ import static org.mockito.Mockito.times;
 public class ValidatePasswordUseCaseImplTest {
 
     @Mock
-    private IValidatePasswordUseCase passwordValidator;
-
-    @Mock
     private ValidationService validationService;
 
     @InjectMocks
@@ -35,7 +32,6 @@ public class ValidatePasswordUseCaseImplTest {
         validatePasswordImpl.validate(password);
         Mockito.verify(validationService, times(1)).validateBlank(expectedPassword);
         Mockito.verify(validationService, times(1)).validateLength(expectedPassword);
-
     }
 
 
