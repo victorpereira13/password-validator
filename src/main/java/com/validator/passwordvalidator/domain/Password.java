@@ -3,12 +3,14 @@ package com.validator.passwordvalidator.domain;
 
 import com.validator.passwordvalidator.domain.exceptions.PasswordException;
 import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 
 import java.util.Objects;
 
 @Getter
 @Builder
+@Data
 public class Password {
     private String password;
 

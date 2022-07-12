@@ -4,7 +4,6 @@ import com.validator.passwordvalidator.domain.Password;
 import com.validator.passwordvalidator.usecase.exceptions.PasswordValidatorException;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
