@@ -1,4 +1,4 @@
-package com.validator.passwordvalidator.domain.exceptions;
+package com.validator.passwordvalidator.entities.exceptions;
 
 public class PasswordException extends RuntimeException{
     public PasswordException(String message) {

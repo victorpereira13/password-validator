@@ -1,4 +1,4 @@
-package com.validator.passwordvalidator.usecase.exceptions;
+package com.validator.passwordvalidator.usecase.validatepassword.exceptions;
 
 public class PasswordValidatorException extends RuntimeException {
     public PasswordValidatorException(String message) {

@@ -1,6 +1,6 @@
 package com.validator.passwordvalidator.adapter.rest.controller;
 
-import com.validator.passwordvalidator.usecase.IValidatePasswordUseCase;
+import com.validator.passwordvalidator.usecase.validatepassword.IValidatePasswordUseCase;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

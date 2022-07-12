@@ -1,8 +1,8 @@
 package com.validator.passwordvalidator.adapter.rest.errorhandler;
 
 import com.validator.passwordvalidator.adapter.rest.errorhandler.json.ApiErrorResponse;
-import com.validator.passwordvalidator.domain.exceptions.PasswordException;
-import com.validator.passwordvalidator.usecase.exceptions.PasswordValidatorException;
+import com.validator.passwordvalidator.entities.exceptions.PasswordException;
+import com.validator.passwordvalidator.usecase.validatepassword.exceptions.PasswordValidatorException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

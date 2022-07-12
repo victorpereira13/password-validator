@@ -1,7 +1,7 @@
-package com.validator.passwordvalidator.domain;
+package com.validator.passwordvalidator.entities;
 
 
-import com.validator.passwordvalidator.domain.exceptions.PasswordException;
+import com.validator.passwordvalidator.entities.exceptions.PasswordException;
 import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
@@ -15,14 +15,13 @@ public class Password {
     private String password;
 
     public void setPassword(String password) {
-        validateAttribute(password);
-        this.password = password;
+        this.password = validateAttribute(password);
     }
 
-    private void validateAttribute(String attribute) {
-     // TODO: para não tomar nullpointer
+    private String validateAttribute(String attribute) {
         if (Objects.isNull(attribute) || attribute.isBlank())
             throw new PasswordException("A senha não pode estar em branco");
+        return attribute;
     }
 
     public Password(String password) {
